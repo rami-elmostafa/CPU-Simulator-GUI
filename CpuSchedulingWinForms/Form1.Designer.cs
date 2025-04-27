@@ -19,6 +19,7 @@
             }
             base.Dispose(disposing);
         }
+        
 
         #region Windows Form Designer generated code
 
@@ -35,6 +36,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnPriority = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.Controls.Add(this.btnSRTF);
+            this.Controls.Add(this.btnHRRN);
             this.SuspendLayout();
             // 
             // labelProcess
@@ -125,6 +128,29 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+// btnSRTF
+            this.btnSRTF = new System.Windows.Forms.Button();
+            this.btnSRTF.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSRTF.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSRTF.Location = new System.Drawing.Point(12, 210); // Adjust the position as you like
+            this.btnSRTF.Name = "btnSRTF";
+            this.btnSRTF.Size = new System.Drawing.Size(134, 55);
+            this.btnSRTF.TabIndex = 6;
+            this.btnSRTF.Text = "SHORTEST REMAINING TIME FIRST";
+            this.btnSRTF.UseVisualStyleBackColor = true;
+            this.btnSRTF.Click += new System.EventHandler(this.btnSRTF_Click);
+
+// btnHRRN
+            this.btnHRRN = new System.Windows.Forms.Button();
+            this.btnHRRN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHRRN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnHRRN.Location = new System.Drawing.Point(159, 210); // Adjust position too
+            this.btnHRRN.Name = "btnHRRN";
+            this.btnHRRN.Size = new System.Drawing.Size(134, 55);
+            this.btnHRRN.TabIndex = 7;
+            this.btnHRRN.Text = "HRRN";
+            this.btnHRRN.UseVisualStyleBackColor = true;
+            this.btnHRRN.Click += new System.EventHandler(this.btnHRRN_Click);
 
         }
 
@@ -136,6 +162,9 @@
         private System.Windows.Forms.Button btnPriority;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox txtProcess;
+        private System.Windows.Forms.Button btnSRTF;
+        private System.Windows.Forms.Button btnHRRN;
+
     }
 }
 
